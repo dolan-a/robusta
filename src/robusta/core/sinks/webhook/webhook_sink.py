@@ -103,6 +103,7 @@ class WebhookSink(SinkBase):
                 f"*Description:* {message['description']}\n"
                 f"*Failure:* {message['failure']}\n"
                 f"*Aggregation Key:* {message['aggregation_key']}\n"
+                f"*Source:* {self.cluster_name}\n"
                 f"*labels*: {labels_as_text}\n"
             }
         try:
